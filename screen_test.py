@@ -150,12 +150,12 @@ try:
     download_screener_data.click()
     time.sleep(1.5)
     today = str(datetime.date.today())
-    downloaded_file = r"D:\Users\csben\Downloads\america_" + today + ".csv"
-    new_name = r"D:\Users\csben\Downloads\screener_data.csv"
+    downloaded_file = r"C:\Downloads\america_" + today + ".csv"
+    new_name = r"C:\Downloads\screener_data.csv"
     os.rename(downloaded_file, new_name)
-    os.replace(r"D:\Users\csben\Downloads\screener_data.csv", r"D:\Screener\scanner\screener_data.csv")
+    os.replace(r"C:\Downloads\screener_data.csv", r"C:\Screener\tmp\screener_data.csv")
     tv = TvDatafeed(username="password",password="password")
-    screener_data = pd.read_csv(r"D:\Screener\scanner\screener_data.csv")
+    screener_data = pd.read_csv(r"C:\Screener\tmp\screener_data.csv")
     time.sleep(0.1)
 
     numTickers = len(screener_data)
@@ -176,7 +176,7 @@ try:
         volume = screener_data.iloc[i]['Volume']
         dolVol = screener_data.iloc[i]['Volume*Price']
         # Gaps Check 
-        print(tick + f" {i}")
+        #print(tick + f" {i}")
         if(dolVol > 1000000 and volume>150000 and currPrice > 3 and False):
             if(dateToSearch == "0" and pmChange != 0 and math.isnan(pmChange) != True):
                 data_daily = tv.get_hist(tick, exchange, n_bars=100) # get 20 past daily candles
@@ -193,21 +193,21 @@ try:
 
                 if(z < -5):
                     z = round(z, 3)
-                    ourpath = pathlib.Path("D:/Screener/scanner/tmp") / "test.png"
+                    ourpath = pathlib.Path("C:/Screener/tmp") / "test.png"
                     todayGapValuePercent = todayGapValue*100;
                     mpf.plot(data_daily, type='candle', mav=(10, 20), volume=True, title=tick, hlines=dict(hlines=[pmPrice], linestyle="-."), style=s, savefig=ourpath)
                     sendDiscordEmbed(tick + f" {prevClose} >> {pmPrice} ▼ {pmChange} ({todayGapValuePercent}%)", f"NEP Setup, Z-Score: {z}")
                     discord.post(file={"test": open("tmp/test.png", "rb")})
                 if(z > 5):
                     z = round(z, 3)
-                    ourpath = pathlib.Path("D:/Screener/scanner/tmp") / "test.png"
+                    ourpath = pathlib.Path("C:/Screener/tmp") / "test.png"
                     todayGapValuePercent = todayGapValue*100;
                     mpf.plot(data_daily, type='candle', mav=(10, 20), volume=True, title=tick, hlines=dict(hlines=[pmPrice], linestyle="-."), style=s, savefig=ourpath)
                     sendDiscordEmbed(tick + f" {prevClose} >> {pmPrice} ▲ {pmChange} ({todayGapValuePercent}%)", f"EP Setup, Z-Score: {z}")
                     discord.post(file={"test": open("tmp/test.png", "rb")})
             else:
                 try: 
-                    data_daily_full = pd.read_csv(f"D:/Screener/scanner/data_csvs/{tick}_data.csv")
+                    data_daily_full = pd.read_csv(f"D:/Screener/data_csvs/{tick}_data.csv")
                     indexOfDay = findIndex(data_daily_full, dateToSearch)
                     data_daily = data_daily_full
                     if(indexOfDay != 99999):
@@ -225,14 +225,14 @@ try:
                         z = (todayGapValue-statistics.mean(gaps))/statistics.stdev(gaps)
                         if(z < -4):
                             z = round(z, 3)
-                            ourpath = pathlib.Path("D:/Screener/scanner/tmp") / "test.png"
+                            ourpath = pathlib.Path("C:/Screener/tmp") / "test.png"
                             todayGapValuePercent = todayGapValue*100;
                             mpf.plot(data_daily, type='candle', mav=(10, 20), volume=True, vlines=dict(vlines=[dateToSearch],linewidths=(1), alpha=0.25), title=tick, style=s, savefig=ourpath)
                             sendDiscordEmbed(tick, f"NEP Setup, Date: {dateToSearch}, Z-Score: {z}")
                             discord.post(file={"test": open("tmp/test.png", "rb")})
                         if(z > 4):
                             z = round(z, 3)
-                            ourpath = pathlib.Path("D:/Screener/scanner/tmp") / "test.png"
+                            ourpath = pathlib.Path("C:/Screener/tmp") / "test.png"
                             todayGapValuePercent = todayGapValue*100;
                             mpf.plot(data_daily, type='candle', mav=(10, 20), volume=True, vlines=dict(vlines=[dateToSearch],linewidths=(1), alpha=0.25), title=tick, style=s, savefig=ourpath)
                             sendDiscordEmbed(tick, f"EP Setup, Date: {dateToSearch}, Z-Score: {z}")
@@ -249,6 +249,7 @@ try:
 
         if(dolVol > 1000000 and volume > 150000 and currPrice > 2 and pmChange != 0 and math.isnan(pmChange) != True):
             try: 
+                print("1")
                 data_daily_full = pd.read_csv(f"C:/Screener/data_csvs/{tick}_data.csv")
                 indexOfDay = findIndex(data_daily_full, dateToSearch)
                 data_daily = data_daily_full
@@ -271,13 +272,13 @@ try:
                     length = len(data_daily)-(len(data_daily_full) - rightbuffer)
                     data_daily = data_daily.drop(['datetime'], axis=1)
 
-                    zfilter = 3.2
+                    zfilter = 1.5
                     gapzfilter0 = 8
                     gapzfilter1 = 4
                     changezfilter = 4
 			
                    
-                    print(data_daily.head(1))
+                    
                     
                     prevClose = data_daily.iloc[length-1][4]
                     
