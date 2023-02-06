@@ -620,3 +620,341 @@ DevTools listening on ws://127.0.0.1:60877/devtools/browser/efe04404-4d69-4d09-a
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
 console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675669024075	geckodriver	INFO	Listening on 127.0.0.1:59121
+1675669027105	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59122" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileTKrfFu"
+1675669027383	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675669027386	Marionette	INFO	Listening on port 59135
+Read port: 59135
+WebDriver BiDi listening on ws://127.0.0.1:59122
+1675669027477	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileTKrfFu\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59122/devtools/browser/a86ee248-54d5-4fa5-949b-2455708cb8c5
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675669096924	geckodriver	INFO	Listening on 127.0.0.1:59306
+1675669099955	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59307" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilePzFZPH"
+1675669100227	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675669100230	Marionette	INFO	Listening on port 59319
+Read port: 59319
+WebDriver BiDi listening on ws://127.0.0.1:59307
+1675669100335	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilePzFZPH\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59307/devtools/browser/282f8db1-07cd-4eca-952f-0fa37b42c496
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675669214875	geckodriver	INFO	Listening on 127.0.0.1:59506
+1675669217908	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59507" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilerTD3I2"
+1675669218174	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675669218178	Marionette	INFO	Listening on port 59516
+Read port: 59516
+WebDriver BiDi listening on ws://127.0.0.1:59507
+1675669218270	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilerTD3I2\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59507/devtools/browser/e696047e-ca49-4e45-b625-27fe922cd19f
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675669286640	geckodriver	INFO	Listening on 127.0.0.1:59661
+1675669289683	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59662" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilegrEmtZ"
+1675669289955	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675669289958	Marionette	INFO	Listening on port 59674
+Read port: 59674
+WebDriver BiDi listening on ws://127.0.0.1:59662
+1675669290065	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilegrEmtZ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59662/devtools/browser/77cae3b0-3b71-4acd-901a-a059a00db5a1
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675669448873	geckodriver	INFO	Listening on 127.0.0.1:59923
+1675669459050	geckodriver	INFO	Listening on 127.0.0.1:59936
+1675669462090	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59937" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofile2GzXdH"
+1675669462358	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675669462362	Marionette	INFO	Listening on port 59948
+Read port: 59948
+WebDriver BiDi listening on ws://127.0.0.1:59937
+1675669462467	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofile2GzXdH\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59937/devtools/browser/e8c71922-0235-4466-b06b-8cf4d327d1c5
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675669583849	geckodriver	INFO	Listening on 127.0.0.1:60190
+1675669586900	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60191" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofile33gzqn"
+1675669587174	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675669587178	Marionette	INFO	Listening on port 60204
+Read port: 60204
+WebDriver BiDi listening on ws://127.0.0.1:60191
+1675669587694	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofile33gzqn\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60191/devtools/browser/634b12b0-417e-4c2d-8673-3b1e23f222ac
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675670101157	geckodriver	INFO	Listening on 127.0.0.1:60850
+1675670104191	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60851" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileiqwv99"
+1675670104459	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675670104463	Marionette	INFO	Listening on port 60860
+WebDriver BiDi listening on ws://127.0.0.1:60851
+Read port: 60860
+1675670104634	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileiqwv99\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60851/devtools/browser/0e459995-d9ae-421c-aa12-5802989deda8
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675670209236	geckodriver	INFO	Listening on 127.0.0.1:61079
+1675670212273	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61080" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilezuLqfJ"
+1675670212555	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675670212560	Marionette	INFO	Listening on port 61088
+Read port: 61088
+WebDriver BiDi listening on ws://127.0.0.1:61080
+1675670212671	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilezuLqfJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61080/devtools/browser/1dbe10f4-7368-4749-9d1a-521282cd36a8
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675670236880	geckodriver	INFO	Listening on 127.0.0.1:61186
+1675670239906	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61187" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofile7mPhhA"
+1675670240173	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675670240177	Marionette	INFO	Listening on port 61195
+Read port: 61195
+WebDriver BiDi listening on ws://127.0.0.1:61187
+1675670240276	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofile7mPhhA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61187/devtools/browser/842cd94a-cf35-4a9f-95ff-0460673e33c9
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675693591259	geckodriver	INFO	Listening on 127.0.0.1:50140
+1675693594317	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50141" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileik657d"
+1675693594636	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675693594640	Marionette	INFO	Listening on port 50152
+Read port: 50152
+WebDriver BiDi listening on ws://127.0.0.1:50141
+1675693594763	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileik657d\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50141/devtools/browser/5696aba7-f572-4dc8-9935-8805a38b2949
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675693619970	geckodriver	INFO	Listening on 127.0.0.1:50241
+1675693623013	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50242" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilejuPvYT"
+1675693623264	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675693623267	Marionette	INFO	Listening on port 50252
+WebDriver BiDi listening on ws://127.0.0.1:50242
+Read port: 50252
+1675693623487	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilejuPvYT\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50242/devtools/browser/2dd48e17-2fde-4fdb-92af-04e0b202c403
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675693758306	geckodriver	INFO	Listening on 127.0.0.1:50609
+1675693761339	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50610" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilecW0t5h"
+1675693761600	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675693761604	Marionette	INFO	Listening on port 50624
+WebDriver BiDi listening on ws://127.0.0.1:50610
+Read port: 50624
+1675693761702	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilecW0t5h\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50610/devtools/browser/80e1eafd-24f5-4c6d-bde9-d468d3457101
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675693806940	geckodriver	INFO	Listening on 127.0.0.1:50789
+1675693809979	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50790" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilel5vTPp"
+1675693810237	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675693810241	Marionette	INFO	Listening on port 50803
+WebDriver BiDi listening on ws://127.0.0.1:50790
+Read port: 50803
+1675693810416	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilel5vTPp\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50790/devtools/browser/b4343d7c-14d0-466b-81f5-bebca8690d17
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+1675693835360	geckodriver	INFO	Listening on 127.0.0.1:50919
+1675693838404	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50920" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileZimKRc"
+1675693838648	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675693838652	Marionette	INFO	Listening on port 50933
+WebDriver BiDi listening on ws://127.0.0.1:50920
+Read port: 50933
+1675693838869	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileZimKRc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50920/devtools/browser/e99555dc-29f5-41eb-bc18-797096f9a17e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to remove some intermediate certificates
+console.error: RemoteSecuritySettings.jsm: 
+  certStorage.addCerts failed: 2147500037
+1675694614308	geckodriver	INFO	Listening on 127.0.0.1:52790
+1675694617343	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52791" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileRbhyee"
+1675694617614	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675694617618	Marionette	INFO	Listening on port 52802
+Read port: 52802
+WebDriver BiDi listening on ws://127.0.0.1:52791
+1675694617715	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileRbhyee\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52791/devtools/browser/3d12eef7-7404-45d8-905b-edb4e91c7f95
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675696777647	geckodriver	INFO	Listening on 127.0.0.1:55317
+1675696780679	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55318" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileIaZP57"
+1675696780936	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675696780939	Marionette	INFO	Listening on port 55328
+WebDriver BiDi listening on ws://127.0.0.1:55318
+Read port: 55328
+1675696781103	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileIaZP57\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:55318/devtools/browser/e6d0dd9b-ddf9-423d-b747-2e3aff375d49
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675699230447	geckodriver	INFO	Listening on 127.0.0.1:57709
+1675699233487	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57710" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileRXQfh2"
+1675699233747	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675699233750	Marionette	INFO	Listening on port 57722
+WebDriver BiDi listening on ws://127.0.0.1:57710
+Read port: 57722
+1675699233970	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileRXQfh2\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57710/devtools/browser/776d877b-5097-43aa-824d-c087b60d4685
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+1675699289118	geckodriver	INFO	Listening on 127.0.0.1:57842
+1675699292154	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57843" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileTznc05"
+1675699292407	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675699292410	Marionette	INFO	Listening on port 57851
+WebDriver BiDi listening on ws://127.0.0.1:57843
+Read port: 57851
+1675699292626	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileTznc05\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57843/devtools/browser/0d932611-4167-47a7-a46a-db23a24887c0
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675699385638	geckodriver	INFO	Listening on 127.0.0.1:57985
+1675699396473	geckodriver	INFO	Listening on 127.0.0.1:57999
+1675699399516	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58000" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilepT716Q"
+1675699399777	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675699399781	Marionette	INFO	Listening on port 58010
+Read port: 58010
+WebDriver BiDi listening on ws://127.0.0.1:58000
+1675699399883	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilepT716Q\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58000/devtools/browser/b5ad04eb-06ea-4fbf-a350-8101dfb20ed1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675699543470	geckodriver	INFO	Listening on 127.0.0.1:58277
+1675699546513	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58278" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileAalhTo"
+1675699546770	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675699546773	Marionette	INFO	Listening on port 58287
+WebDriver BiDi listening on ws://127.0.0.1:58278
+Read port: 58287
+1675699546936	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileAalhTo\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58278/devtools/browser/141758fb-f1e6-4432-99e4-aaa185c96d4f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675700626762	geckodriver	INFO	Listening on 127.0.0.1:59410
+1675700629793	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59411" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilexV4y6j"
+1675700630067	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675700630071	Marionette	INFO	Listening on port 59424
+Read port: 59424
+WebDriver BiDi listening on ws://127.0.0.1:59411
+1675700630160	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilexV4y6j\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59411/devtools/browser/2522e089-0458-420e-8287-d303d1d47251
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675703981337	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1675707202210	geckodriver	INFO	Listening on 127.0.0.1:49681
+1675707205248	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49682" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilekw4W4O"
+1675707205523	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675707205527	Marionette	INFO	Listening on port 49693
+Read port: 49693
+WebDriver BiDi listening on ws://127.0.0.1:49682
+1675707205617	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilekw4W4O\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49682/devtools/browser/8ebeddf7-ed7b-48ab-b119-e3e0980744e2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675707697473	geckodriver	INFO	Listening on 127.0.0.1:50373
+1675707700501	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50374" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilelZS3pi"
+1675707700756	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675707700760	Marionette	INFO	Listening on port 50384
+WebDriver BiDi listening on ws://127.0.0.1:50374
+Read port: 50384
+1675707700923	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofilelZS3pi\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50374/devtools/browser/3e5a6e09-e8b6-47e1-b48b-2005f5059621
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675707836817	geckodriver	INFO	Listening on 127.0.0.1:50636
+1675707839857	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50637" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofile0vpE93"
+1675707840111	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675707840115	Marionette	INFO	Listening on port 50648
+WebDriver BiDi listening on ws://127.0.0.1:50637
+Read port: 50648
+1675707840282	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofile0vpE93\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50637/devtools/browser/37f0d452-fa3d-4020-966f-9ba201578561
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675707895078	geckodriver	INFO	Listening on 127.0.0.1:50814
+1675707898122	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50815" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileLJO590"
+1675707898377	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675707898380	Marionette	INFO	Listening on port 50824
+WebDriver BiDi listening on ws://127.0.0.1:50815
+Read port: 50824
+1675707898594	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileLJO590\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50815/devtools/browser/c6851562-4e89-4d14-8607-dfb935c2a1b2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675707986651	geckodriver	INFO	Listening on 127.0.0.1:50967
+1675707989715	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50968" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofile1gs9GV"
+1675707989970	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675707989974	Marionette	INFO	Listening on port 50979
+WebDriver BiDi listening on ws://127.0.0.1:50968
+Read port: 50979
+1675707990191	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofile1gs9GV\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50968/devtools/browser/8a352c6c-0fb0-42e5-a280-bb1bdcd0a916
