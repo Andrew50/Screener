@@ -93,3 +93,6 @@ DevTools listening on ws://127.0.0.1:15873/devtools/browser/535a5ed1-4861-4716-9
 console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
 [Parent 21576, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675662694354	Marionette	INFO	Stopped listening on port 15880
+Dynamically enable window occlusion 1
+[Parent 21576, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
