@@ -747,3 +747,5 @@ DevTools listening on ws://127.0.0.1:28868/devtools/browser/5a43a52c-49c9-4b08-8
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
 console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675669276104	Marionette	INFO	Stopped listening on port 28875
+Dynamically enable window occlusion 1
