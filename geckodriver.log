@@ -959,3 +959,4 @@ Read port: 50979
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofile1gs9GV\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:50968/devtools/browser/8a352c6c-0fb0-42e5-a280-bb1bdcd0a916
 JavaScript warning: https://pagead2.googlesyndication.com/bg/4bT6diwPPsQGeut8gwoHo0InSaE1h0LXepToI3_IbtM.js line 2 > eval line 6915 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
