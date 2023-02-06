@@ -12,7 +12,7 @@ import time
 from pathlib import Path
 
 tv = TvDatafeed(username="cs.benliu@gmail.com",password="tltShort!1")
-screener_data = pd.read_csv(r"D:\Screener\tvdatafeed\screener_data.csv")
+screener_data = pd.read_csv(r"C:\Screener\tmp\screener_data.csv")
 numTickers = len(screener_data)
 for i in range(numTickers):
 
@@ -23,9 +23,9 @@ for i in range(numTickers):
     exchange = screener_data.iloc[i]['Exchange']
     print(ticker + f" {i}")
     try:
-        if(os.path.exists("D:/Screener/tvdatafeed/data_csvs/" + ticker + "_data.csv") == False):
+        if(os.path.exists("C:/Screener/data_csvs/" + ticker + "_data.csv") == False):
             data_daily = tv.get_hist(ticker, exchange, n_bars=3500)
-            data_daily.to_csv("D:/Screener/tvdatafeed/data_csvs/" + ticker + "_data.csv")
+            data_daily.to_csv("C:/Screener/data_csvs/" + ticker + "_data.csv")
 
 
     except TimeoutError:

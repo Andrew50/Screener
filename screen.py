@@ -32,6 +32,13 @@ def sendDiscordEmbed(ticker, description):
         }
         ],
     )
+    
+pc = 0
+if pc == 0:
+    pathf = "csben"
+else: 
+    pathf = ""
+
 
 options = Options()
 options.binary_location = r"C:\Program Files\Mozilla Firefox\firefox.exe"
@@ -87,6 +94,8 @@ print(f'Scraping {url}...')
 time.sleep(10)
 print('wait over')
 
+
+
 try:
 
     #setting default scanner settings
@@ -138,12 +147,12 @@ try:
     download_screener_data.click()
     time.sleep(1.5)
     today = str(datetime.date.today())
-    downloaded_file = r"D:\Users\csben\Downloads\america_" + today + ".csv"
-    new_name = r"D:\Users\csben\Downloads\screener_data.csv"
+    downloaded_file = r"C:\Downloads\america_" + today + ".csv"
+    new_name = r"C:\Downloads\screener_data.csv"
     os.rename(downloaded_file, new_name)
-    os.replace(r"D:\Users\csben\Downloads\screener_data.csv", r"D:\Screener\scanner\screener_data.csv")
+    os.replace(r"C:\Downloads\screener_data.csv", r"C:\Screener\tmp\screener_data.csv")
     tv = TvDatafeed(username="password",password="password")
-    screener_data = pd.read_csv(r"D:\Screener\scanner\screener_data.csv")
+    screener_data = pd.read_csv(r"C:\Screener\tmp\screener_data.csv")
     time.sleep(0.1)
 
     numTickers = len(screener_data)
@@ -181,14 +190,14 @@ try:
 
                 if(z < -5):
                     z = round(z, 3)
-                    ourpath = pathlib.Path("D:/Screener/scanner/tmp") / "test.png"
+                    ourpath = pathlib.Path("C:/Screener/tmp") / "test.png"
                     todayGapValuePercent = todayGapValue*100;
                     mpf.plot(data_daily, type='candle', mav=(10, 20), volume=True, title=tick, hlines=dict(hlines=[pmPrice], linestyle="-."), style=s, savefig=ourpath)
                     sendDiscordEmbed(tick + f" {prevClose} >> {pmPrice} ▼ {pmChange} ({todayGapValuePercent}%)", f"NEP Setup, Z-Score: {z}")
                     discord.post(file={"test": open("tmp/test.png", "rb")})
                 if(z > 5):
                     z = round(z, 3)
-                    ourpath = pathlib.Path("D:/Screener/scanner/tmp") / "test.png"
+                    ourpath = pathlib.Path("C:/Screener/tmp") / "test.png"
                     todayGapValuePercent = todayGapValue*100;
                     mpf.plot(data_daily, type='candle', mav=(10, 20), volume=True, title=tick, hlines=dict(hlines=[pmPrice], linestyle="-."), style=s, savefig=ourpath)
                     sendDiscordEmbed(tick + f" {prevClose} >> {pmPrice} ▲ {pmChange} ({todayGapValuePercent}%)", f"EP Setup, Z-Score: {z}")
@@ -211,14 +220,14 @@ try:
                     z = (todayGapValue-statistics.mean(gaps))/statistics.stdev(gaps)
                     if(z < -4):
                         z = round(z, 3)
-                        ourpath = pathlib.Path("D:/Screener/scanner/tmp") / "test.png"
+                        ourpath = pathlib.Path("C:/Screener/tmp") / "test.png"
                         todayGapValuePercent = todayGapValue*100;
                         mpf.plot(data_daily, type='candle', mav=(10, 20), volume=True, vlines=dict(vlines=[date],linewidths=(1), alpha=0.25), title=tick, style=s, savefig=ourpath)
                         sendDiscordEmbed(tick, f"NEP Setup, Date: {date}, Z-Score: {z}")
                         discord.post(file={"test": open("tmp/test.png", "rb")})
                     if(z > 4):
                         z = round(z, 3)
-                        ourpath = pathlib.Path("D:/Screener/scanner/tmp") / "test.png"
+                        ourpath = pathlib.Path("C:/Screener/tmp") / "test.png"
                         todayGapValuePercent = todayGapValue*100;
                         mpf.plot(data_daily, type='candle', mav=(10, 20), volume=True, vlines=dict(vlines=[date],linewidths=(1), alpha=0.25), title=tick, style=s, savefig=ourpath)
                         sendDiscordEmbed(tick, f"EP Setup, Date: {date}, Z-Score: {z}")
@@ -236,7 +245,7 @@ try:
 			
             data_daily = tv.get_hist(tick, exchange, n_bars=70) # get 20 past daily candles
             print(data_daily.head(1))
-            length = len(data_daily)
+            length = len(data_daily) - 1
             prevClose = data_daily.iloc[length-1][4]
             pmPrice = prevClose + pmChange
             todayGapValue = round(((pmPrice/prevClose)-1), 2)
@@ -254,25 +263,30 @@ try:
                     lastCloses = lastCloses + data_daily.iloc[length-1-c-n][4]
                 fourSMA = round((lastCloses/4), 2)
                 datavalue = (fourSMA/data_daily.iloc[length-n][1] - 1)
-            if i == 29:
-                gapz1 = (gapvalue-statistics.mean(zgaps))/statistics.stdev(zgaps)
+                if i == 29:
+                    gapz1 = (gapvalue-statistics.mean(zgaps))/statistics.stdev(zgaps)
                 zgaps.append(gapvalue)
                 zchange.append(changevalue)
-            if i > 14:
-                zdata.append(datavalue)
+                if i > 14:
+                    zdata.append(datavalue)
 				
 				
 				
             gapz = (todayGapValue-statistics.mean(zgaps))/statistics.stdev(zgaps)
             changez = (todayChangeValue - statistics.mean(zchange))/statistics.stdev(zchange) 
-            value3 = (statistics.mean(data_daily.iloc[length-4:length][4]))/pmPrice
+            lastCloses = 0
+            for c in range(4): 
+                    
+                lastCloses = lastCloses + data_daily.iloc[length-c-n][4]
+            fourSMA = round((lastCloses/4), 2)
+            value3 = (fourSMA)/pmPrice
             z = (value3 - statistics.mean(zdata))/statistics.stdev(zdata) 
 			
 			
             print(f"z is = {z}, gapz is {gapz}")
             if (gapz1 < gapzfilter1 and gapz < gapzfilter0 and changez < changezfilter and z > zfilter and value3 > 0):
                 z = round(z, 3)
-                ourpath = pathlib.Path("D:/Screener/scanner/tmp") / "test.png"
+                ourpath = pathlib.Path("C:/Screener/tmp") / "test.png"
                 todayGapValuePercent = todayGapValue*100;
                 mpf.plot(data_daily, type='candle', mav=(10, 20), volume=True, title=tick, hlines=dict(hlines=[pmPrice], linestyle="-."), style=s, savefig=ourpath)
                 sendDiscordEmbed(tick + f" {prevClose} >> {pmPrice} ▲ {pmChange} ({todayGapValuePercent}%)", f"MR Setup, Z-Score: {z}")

@@ -513,3 +513,97 @@ console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefin
 [Parent 21576, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
 Dynamically enable window occlusion 1
+1675664473374	geckodriver	INFO	Listening on 127.0.0.1:4921
+1675664476372	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "4922" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofilebYgo2v"
+1675664476757	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675664476761	Marionette	INFO	Listening on port 4932
+Read port: 4932
+WebDriver BiDi listening on ws://127.0.0.1:4922
+1675664476881	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofilebYgo2v\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:4922/devtools/browser/54ca0b45-06b4-4621-bd3a-57ca3daf5b70
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675664610339	geckodriver	INFO	Listening on 127.0.0.1:5028
+1675664613341	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5029" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileHhXih3"
+1675664613701	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675664613705	Marionette	INFO	Listening on port 5036
+Read port: 5036
+WebDriver BiDi listening on ws://127.0.0.1:5029
+1675664613822	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileHhXih3\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:5029/devtools/browser/85239be4-4330-4d3f-a5e7-562a4d27f77e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675664840642	Marionette	INFO	Stopped listening on port 5036
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5126" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileHeHUym"
+1675664838587	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675664838591	Marionette	INFO	Listening on port 5133
+Read port: 5133
+WebDriver BiDi listening on ws://127.0.0.1:5126
+1675664838719	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileHeHUym\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:5126/devtools/browser/029fd9b9-ace3-49d4-9c43-b39c85aebee1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675664932462	Marionette	INFO	Stopped listening on port 5131675664932908	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5217" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileonikS0"
+1675664933356	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675664933360	Marionette	INFO	Listening on port 5226
+Read port: 5226
+WebDriver BiDi listening on ws://127.0.0.1:5217
+1675664933479	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileonikS0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:5217/devtools/browser/8913cc13-162a-46f0-a4e8-5eaede7b68df
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675665036230	Marionette	INFO	Stopped listening on port 5226
+Dynamically enable window occlusion 1
+1675665036911	geckodriver	INFO	Listening on 127.0.0.1:5304
+1675665039922	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5305" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofilePZpn2l"
+1675665040291	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675665040295	Marionette	INFO	Listening on port 5312
+Read port: 5312
+WebDriver BiDi listening on ws://127.0.0.1:5305
+1675665040413	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofilePZpn2l\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:5305/devtools/browser/0ebc4d5d-0000-44ed-b7d6-f3a949b38503
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675665124757	Marionette	INFO	Stopped listening on port 5312
+Dynamically enable window occlusion 1
+ing command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "20716" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileTsggan"
+1675665122768	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675665122772	Marionette	INFO	Listening on port 20723
+Read port: 20723
+WebDriver BiDi listening on ws://127.0.0.1:20716
+1675665122915	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileTsggan\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:20716/devtools/browser/d5a07bfc-7db7-4d85-8eb0-b5d89f489704
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+1675665139635	Marionette	INFO	Stopped listening on port 20723
+Dynamically enable window occlusion 1
+[Parent 6588, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
+1675665211882	geckodriver	INFO	Listening on 127.0.0.1:20841
+1675665214883	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "20842" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileu33HKE"
+1675665215210	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675665215214	Marionette	INFO	Listening on port 20849
+WebDriver BiDi listening on ws://127.0.0.1:20842
+Read port: 20849
+1675665215410	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileu33HKE\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:20842/devtools/browser/83bafb9b-b5e2-48ad-b5a4-9c196b162bde
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675665407916	geckodriver	INFO	Listening on 127.0.0.1:20930
+1675665410916	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "20931" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileaVnogD"
+1675665411242	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675665411246	Marionette	INFO	Listening on port 20938
+WebDriver BiDi listening on ws://127.0.0.1:20931
+Read port: 20938
+1675665411441	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileaVnogD\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:20931/devtools/browser/cb708ac4-5ade-4428-bf46-a211b45b27b1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
