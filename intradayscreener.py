@@ -153,11 +153,11 @@ try:
         download_screener_data.click()
         time.sleep(1)
         today = str(datetime.date.today())
-        downloaded_file = r"D:\Users\csben\Downloads\america_" + today + ".csv"
-        new_name = r"D:\Users\csben\Downloads\screener_data_intraday.csv"
+        downloaded_file = r"C:\Downloads\america_" + today + ".csv"
+        new_name = r"C:\Downloads\screener_data_intraday.csv"
         os.rename(downloaded_file, new_name)
-        os.replace(r"D:\Users\csben\Downloads\screener_data_intraday.csv", r"D:\Screener\scanner\screener_data_intraday.csv")
-        screener_data = pd.read_csv(r"D:\Screener\scanner\screener_data_intraday.csv")
+        os.replace(r"C:\Downloads\screener_data_intraday.csv", r"C:\Screener\tmp\screener_data_intraday.csv")
+        screener_data = pd.read_csv(r"C:\Screener\tmp\screener_data_intraday.csv")
         time.sleep(0.1)
 
         numTickers = len(screener_data)
@@ -180,7 +180,7 @@ try:
             if(change > 2.5 and volume > 250000 and volume*currPrice > 750000 and currPrice > 1.2):
                 data_minute_100 = tv.get_hist(tick, exchange, interval=Interval.in_1_minute, n_bars=100)
                 print(data_minute_100.head(1))
-                ourpath = pathlib.Path("D:/Screener/scanner/tmp") / "test3.png"
+                ourpath = pathlib.Path("C:/Screener/tmp") / "test3.png"
                 openCandlePrice = float(data_minute_100.iloc[len(data_minute_100)-1][1])
                 changePrice = round(float(currPrice - openCandlePrice), 2)
                 marketCap = float(screener_data.iloc[i]['Market Capitalization'])
@@ -192,7 +192,7 @@ try:
             if(dayChange > 15 and volume > 500000 and volume*currPrice > 7500000 and currPrice > 1.2): 
                 data_minute_100 = tv.get_hist(tick, exchange, interval=Interval.in_1_minute, n_bars=250)
                 print(data_minute_100.head(1))
-                ourpath = pathlib.Path("D:/Screener/scanner/tmp") / "test3.png"
+                ourpath = pathlib.Path("C:/Screener/tmp") / "test3.png"
                 
                 marketCap = float(screener_data.iloc[i]['Market Capitalization'])
                 marketCapText = round((marketCap / 1000000000), 2)
