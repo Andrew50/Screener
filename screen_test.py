@@ -57,8 +57,9 @@ url = "https://www.tradingview.com/screener/"
 browser.get(url)
 mc = mpf.make_marketcolors(up='g',down='r')
 s  = mpf.make_mpf_style(marketcolors=mc)
-dateToSearch = '0' # 0 is for the next session 
+dateToSearch = '2022-05-12' # 0 is for the next session 
 leftBuffer = 40
+chartSize = 80
 
 
 # Start
@@ -95,7 +96,7 @@ login_button = browser.find_element(By.XPATH, '//button[@class="tv-button tv-but
 login_button.click()
 time.sleep(1)
 print(f'Scraping {url}...')
-time.sleep(10)
+time.sleep(20)
 print('wait over')
 
 try:
@@ -175,8 +176,8 @@ try:
         volume = screener_data.iloc[i]['Volume']
         dolVol = screener_data.iloc[i]['Volume*Price']
         # Gaps Check 
-        print(tick + f" {i}")
-        if(dolVol > 1000000 and volume>150000 and currPrice > 3):
+        #print(tick + f" {i}")
+        if(dolVol > 1000000 and volume>150000 and currPrice > 3 and False):
             if(dateToSearch == "0" and pmChange != 0 and math.isnan(pmChange) != True):
                 data_daily = tv.get_hist(tick, exchange, n_bars=100) # get 20 past daily candles
                 print(data_daily.head(1))
@@ -206,7 +207,7 @@ try:
                     discord.post(file={"test": open("tmp/test.png", "rb")})
             else:
                 try: 
-                    data_daily_full = pd.read_csv(f"C:/Screener/data_csvs/{tick}_data.csv")
+                    data_daily_full = pd.read_csv(f"D:/Screener/data_csvs/{tick}_data.csv")
                     indexOfDay = findIndex(data_daily_full, dateToSearch)
                     data_daily = data_daily_full
                     if(indexOfDay != 99999):
@@ -244,7 +245,93 @@ try:
                     print(tick + " does not have a file")
      
 
+                    #MR###############################################################################
 
+        if(dolVol > 1000000 and volume > 150000 and currPrice > 2 and pmChange != 0 and math.isnan(pmChange) != True):
+            try: 
+                print("1")
+                data_daily_full = pd.read_csv(f"C:/Screener/data_csvs/{tick}_data.csv")
+                indexOfDay = findIndex(data_daily_full, dateToSearch)
+                data_daily = data_daily_full
+                if(indexOfDay != 99999):
+                    if (dateToSearch == "0"):
+                        pmPrice = prevClose + pmChange
+                        rightbuffer = len(data_daily_full)
+                    else:
+                        pmPrice = data_daily.iloc[indexOfDay][1]
+                        if len(data_daily_full) - indexOfDay > 20:
+                            rightbuffer = indexOfDay+20
+                        else:
+                            rightbuffer = len(data_daily_full)
+
+
+
+                    data_daily = data_daily_full[(rightbuffer - chartSize):(rightbuffer)]
+                    data_daily['Datetime'] = pd.to_datetime(data_daily['datetime'])
+                    data_daily = data_daily.set_index('Datetime')
+                    length = len(data_daily)-(len(data_daily_full) - rightbuffer)
+                    data_daily = data_daily.drop(['datetime'], axis=1)
+
+                    zfilter = 1.5
+                    gapzfilter0 = 8
+                    gapzfilter1 = 4
+                    changezfilter = 4
+			
+                   
+                    
+                    
+                    prevClose = data_daily.iloc[length-1][4]
+                    
+                    todayGapValue = round(((pmPrice/prevClose)-1), 2)
+                    todayChangeValue = data_daily.iloc[length-1][4]/data_daily.iloc[length-1][1] - 1
+                    zdata = [] # 15 length
+                    zgaps = [] # 30 length=
+                    zchange = [] # 30 length
+                    for i in range(30):
+                        n = 29-i
+                        gapvalue = abs((data_daily.iloc[length-n-1][1]/data_daily.iloc[length-2-n][4]) - 1)
+                        changevalue = abs((data_daily.iloc[length-1-n][4]/data_daily.iloc[length-1-n][1]) - 1)
+                        lastCloses = 0
+                        for c in range(4): 
+                    
+                            lastCloses = lastCloses + data_daily.iloc[length-2-c-n][4]
+                        fourSMA = round((lastCloses/4), 2)
+                        datavalue = (fourSMA/data_daily.iloc[length-n-1][1] - 1)
+                        if i == 29:
+                            gapz1 = (gapvalue-statistics.mean(zgaps))/statistics.stdev(zgaps)
+                        zgaps.append(gapvalue)
+                        zchange.append(changevalue)
+                        if i > 14:
+                            zdata.append(datavalue)
+				
+				
+				
+                    gapz = (todayGapValue-statistics.mean(zgaps))/statistics.stdev(zgaps)
+                    changez = (todayChangeValue - statistics.mean(zchange))/statistics.stdev(zchange) 
+                    lastCloses = 0
+                    for c in range(4): 
+                    
+                        lastCloses = lastCloses + data_daily.iloc[length-c-n][4]
+                    fourSMA = round((lastCloses/4), 2)
+                    value3 = (fourSMA)/pmPrice
+                    z = (value3 - statistics.mean(zdata))/statistics.stdev(zdata) 
+			
+			
+                    print(f"z is = {z}, gapz is {gapz}")
+                    if (gapz1 < gapzfilter1 and gapz < gapzfilter0 and changez < changezfilter and z > zfilter and value3 > 0):
+                        z = round(z, 3)
+                        ourpath = pathlib.Path("C:/Screener/tmp") / "test.png"
+                        todayGapValuePercent = todayGapValue*100;
+                        mpf.plot(data_daily, type='candle', mav=(10, 20), volume=True, title=tick, hlines=dict(hlines=[pmPrice], linestyle="-."), style=s, savefig=ourpath)
+                        sendDiscordEmbed(tick + f" {prevClose} >> {pmPrice} ▲ {pmChange} ({todayGapValuePercent}%)", f"MR Setup, Z-Score: {z}")
+                        discord.post(file={"test": open("tmp/test.png", "rb")})
+
+            except IndexError:
+                print(tick + " did not exist at the date " + dateToSearch)
+            except TimeoutError:
+                print("Timeout caught")
+            except FileNotFoundError:
+                print(tick + " does not have a file")   
 
 except (NoSuchElementException, TimeoutException):
     print("category not found")
