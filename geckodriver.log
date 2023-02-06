@@ -960,3 +960,41 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://127.0.0.1:50968/devtools/browser/8a352c6c-0fb0-42e5-a280-bb1bdcd0a916
 JavaScript warning: https://pagead2.googlesyndication.com/bg/4bT6diwPPsQGeut8gwoHo0InSaE1h0LXepToI3_IbtM.js line 2 > eval line 6915 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1675708582885	geckodriver	INFO	Listening on 127.0.0.1:51735
+1675708585918	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51736" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileuvhkiu"
+1675708586190	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675708586196	Marionette	INFO	Listening on port 51746
+Read port: 51746
+WebDriver BiDi listening on ws://127.0.0.1:51736
+1675708586303	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileuvhkiu\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51736/devtools/browser/af327e89-c2e8-49d2-8732-bba70f1f43eb
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675708616606	Marionette	INFO	Stopped listening on port 51746
+Dynamically enable window occlusion 1
+1675710687408	geckodriver	INFO	Listening on 127.0.0.1:54427
+1675710690464	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54428" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileagCuWo"
+1675710690746	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675710690752	Marionette	INFO	Listening on port 54438
+Read port: 54438
+WebDriver BiDi listening on ws://127.0.0.1:54428
+1675710690843	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileagCuWo\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54428/devtools/browser/16621d4c-d761-466a-aae7-4ae37f8c9121
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+1675710718768	geckodriver	INFO	Listening on 127.0.0.1:54526
+1675710721819	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54527" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileLG2Xhy"
+1675710722095	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675710722098	Marionette	INFO	Listening on port 54540
+Read port: 54540
+WebDriver BiDi listening on ws://127.0.0.1:54527
+1675710722201	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\csben\\AppData\\Local\\Temp\\rust_mozprofileLG2Xhy\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54527/devtools/browser/cb31e18e-8006-4518-9f28-257830fed1de
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
