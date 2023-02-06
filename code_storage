@@ -1,0 +1,124 @@
+﻿# tv-data-table
+
+    time.sleep(2)
+    element_tab = browser.find_element(By.XPATH, '//div[@data-set="performance"]')
+    try:
+        element_tab.click()
+    except ElementNotInteractableException:
+        print('test')
+
+    time.sleep(0.5)
+
+    element_tab = browser.find_element(By.XPATH, '//div[@data-set="overview"]')
+    try:
+        element_tab.click()
+    except ElementNotInteractableException:
+        print('test')
+
+    #Logging into trading view
+    login_page = browser.find_element(By.XPATH, '//button[@aria-label="Open user menu"]')
+    login_page.click()
+    time.sleep(0.25)
+    login_page = browser.find_element(By.XPATH, '//button[@data-name="header-user-menu-sign-in"]')
+    login_page.click()
+    time.sleep(0.25)
+    login_page = browser.find_element(By.XPATH, '//span[@class="tv-signin-dialog__social tv-signin-dialog__toggle-email js-show-email"]')
+    login_page.click()
+    username = browser.find_element(By.XPATH, '//input[@name="username"]')
+    username.send_keys("cs.benliu@gmail.com")
+    time.sleep(0.5)
+    password = browser.find_element(By.XPATH, '//input[@name="password"]')
+    password.send_keys("tltShort!1")
+    time.sleep(0.5)
+    login_button = browser.find_element(By.XPATH, '//button[@class="tv-button tv-button--size_large tv-button--primary tv-button--loader"]')
+    login_button.click()
+    time.sleep(1)
+
+
+     #Loop stocks in screen
+    for i in range(numTickers):
+        tick = str(screener_data.iloc[i]['Ticker'])
+        exchange = str(screener_data.iloc[i]['Exchange'])
+        data_minute = tv.get_hist(tick, exchange, interval=Interval.in_1_minute, n_bars=350) #get the most recent candle of pre market
+        data_daily = tv.get_hist(tick, exchange, n_bars=21) # get 20 past daily candles
+        data_daily_100 = tv.get_hist(tick, exchange, n_bars=70)
+        length = len(data_daily)
+        gaps = []
+        todayGapValue = (data_daily.iloc[length-1][1]/data_daily.iloc[length-2][4])-1
+        for i in range(length): 
+            if i > 0:
+                if i < 20: 
+                    gaps.append((data_daily.iloc[i][1]/data_daily.iloc[i-1][4])-1)
+
+
+        z = (todayGapValue-statistics.mean(gaps))/statistics.stdev(gaps)
+
+
+        Z SCORE GAP CHECK ------------------------------------------------------------------------------------------
+
+        # MR Check   
+        if(dolVol > 1000000 and volume>150000 and currPrice > 2 and pmChange != 0 and math.isnan(pmChange) != True):
+            data_daily = tv.get_hist(tick, exchange, n_bars=70) # get 20 past daily candles
+            print(data_daily.head(1))
+            length = len(data_daily)
+            pmPrice = data_daily.iloc[length-1][4] + pmChange
+            prevClose = data_daily.iloc[length-1][4]
+            todayGapValue = round(((pmPrice/prevClose)-1), 2)
+            data = [] # 15 length
+            gaps = [] # 30 length
+            changedata = [] # 30 length
+            #creating data array
+            val = 0
+            for i in range(15): 
+                num = 14-i 
+                lastCloses = 0
+                for c in range(4): 
+                    lastCloses = lastCloses + data_daily.iloc[length-1-c-num][4]
+                fourSMA = round((lastCloses/4), 2)
+                if(num == 0):
+                    value = (fourSMA/pmPrice)-1
+                    data.append(value)
+                    val = value
+                else:
+                    value = (fourSMA/data_daily.iloc[length-1-num][1])
+                    data.append(value)
+            #creating gaps and changedata array
+            chng = 0
+            gp = 0
+            gpo1 = 0
+            for k in range(30):
+                n = 29-k 
+                if(n == 0):
+                    gap = abs((pmPrice/prevClose) - 1)
+                    gp = gap
+                    changedat = abs((data_daily.iloc[length-1][4]/data_daily.iloc[length-1][1]) - 1)
+                    chng = changedat
+                    gaps.append(gap)
+                    changedata.append(changedat)
+                else:
+                    gap = abs((data_daily.iloc[length-n][1]/data_daily.iloc[length-1-n][4]) - 1)
+                    changedat = abs((data_daily.iloc[length-1-n][4]/data_daily.iloc[length-1-n][1]) - 1)
+                    changedata.append(changedat)
+                    gaps.append(gap)
+                if(n == 1):
+                    gap = abs(data_daily.iloc[length-1][1]/data_daily.iloc[length-2][4])
+                    gpo1 = (gap - statistics.mean(gaps))/statistics.mean(gaps)
+
+            z = (val - statistics.mean(data))/statistics.stdev(data)
+            changez = (chng - statistics.mean(changedata))/statistics.stdev(changedata)
+            gapz = (gp - statistics.mean(gaps))/statistics.stdev(gaps)
+            
+            zfilter = 1
+            gapzfilter0 = 8
+            gapzfilter1 = 4
+            changezfilter = 4
+            print(f"z is = {z}, gapz is {gapz}")
+            if (gpo1 < gapzfilter1 and gapz < gapzfilter0 and changez < changezfilter and z > zfilter and value > 0):
+                z = round(z, 3)
+                ourpath = pathlib.Path("D:/Screener/tvdatafeed/tmp") / "test.png"
+                todayGapValuePercent = todayGapValue*100;
+                mpf.plot(data_daily, type='candle', mav=(10, 20), volume=True, title=tick, hlines=dict(hlines=[pmPrice], linestyle="-."), style=s, savefig=ourpath)
+                sendDiscordEmbed(tick + f" {prevClose} >> {pmPrice} ▲ {pmChange} ({todayGapValuePercent}%)", f"MR Setup, Z-Score: {z}")
+                discord.post(file={"test": open("tmp/test.png", "rb")})
+
+
