@@ -1,0 +1,95 @@
+1675660935211	geckodriver	INFO	Listening on 127.0.0.1:1139
+1675660938208	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "1140" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofile5f4xdI"
+1675660938527	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675660938532	Marionette	INFO	Listening on port 1147
+WebDriver BiDi listening on ws://127.0.0.1:1140
+Read port: 1147
+1675660938724	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofile5f4xdI\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:1140/devtools/browser/ebd9330a-9de7-424a-ab2e-4e412f5d1e65
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+1675660961479	Marionette	INFO	Stopped listening on port 1147
+Dynamically enable window occlusion 1
+1675661734491	geckodriver	INFO	Listening on 127.0.0.1:1399
+1675661737488	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "1400" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofilesOJOrX"
+1675661737809	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675661737813	Marionette	INFO	Listening on port 1407
+WebDriver BiDi listening on ws://127.0.0.1:1400
+Read port: 1407
+1675661738012	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofilesOJOrX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:1400/devtools/browser/69c9557b-bdac-4c79-8a0f-4a581b3dec68
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+1675661773509	Marionette	INFO	Stopped listening on port 1407
+Dynamically enable window occlusion 1
+[Parent 8016, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
+[Parent 8016, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
+1675661778804	geckodriver	INFO	Listening on 127.0.0.1:1474
+1675661781805	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "1475" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofilebCHXJS"
+1675661782131	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675661782135	Marionette	INFO	Listening on port 1482
+Read port: 1482
+WebDriver BiDi listening on ws://127.0.0.1:1475
+1675661782284	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofilebCHXJS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:1475/devtools/browser/c3b97157-5ba4-488f-843b-aa13426375ad
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675661933371	Marionette	INFO	Stopped listening on port 1482
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1675661951295	geckodriver	INFO	Listening on 127.0.0.1:1585
+1675661954294	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "1586" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileVMLBbY"
+1675661954629	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675661954632	Marionette	INFO	Listening on port 1593
+Read port: 1593
+WebDriver BiDi listening on ws://127.0.0.1:1586
+1675661954759	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileVMLBbY\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:1586/devtools/browser/9abc2c44-0864-4c35-a081-6cfd87a34c46
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
+1675662164654	geckodriver	INFO	Listening on 127.0.0.1:15727
+1675662167655	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "15728" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofilePNCmF0"
+1675662167975	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675662167979	Marionette	INFO	Listening on port 15737
+WebDriver BiDi listening on ws://127.0.0.1:15728
+Read port: 15737
+1675662168175	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofilePNCmF0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:15728/devtools/browser/bf867e0a-5e27-44b6-bafb-9479bfa4abf5
+1675662190016	Marionette	INFO	Stopped listening on port 15737
+Dynamically enable window occlusion 1
+1675662197123	geckodriver	INFO	Listening on 127.0.0.1:15802
+1675662200123	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "15803" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofilePjDegM"
+1675662200450	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675662200454	Marionette	INFO	Listening on port 15810
+WebDriver BiDi listening on ws://127.0.0.1:15803
+Read port: 15810
+1675662200649	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofilePjDegM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:15803/devtools/browser/8e324037-262a-4f33-a0b0-e4d8044c8988
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+JavaScript error: https://static.tradingview.com/static/bundles/47289.091ca17ce0d61cd0f785.js, line 16: ReferenceError: can't access lexical declaration 'h' before initialization
+JavaScript error: https://static.tradingview.com/static/bundles/47289.091ca17ce0d61cd0f785.js, line 16: ReferenceError: can't access lexical declaration 'h' before initialization
+1675662215546	Marionette	INFO	Stopped listening on port 15810
+Dynamically enable window occlusion 1
+1675662225105	geckodriver	INFO	Listening on 127.0.0.1:15872
+1675662228104	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "15873" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileofYMua"
+1675662228450	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675662228453	Marionette	INFO	Listening on port 15880
+Read port: 15880
+WebDriver BiDi listening on ws://127.0.0.1:15873
+1675662228567	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\19079\\AppData\\Local\\Temp\\rust_mozprofileofYMua\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:15873/devtools/browser/535a5ed1-4861-4716-9293-85ef75c8a9d0
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 510))
+[Parent 21576, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tradingview.com."
