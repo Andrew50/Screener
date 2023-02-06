@@ -59,8 +59,43 @@ mc = mpf.make_marketcolors(up='g',down='r')
 s  = mpf.make_mpf_style(marketcolors=mc)
 dateToSearch = '2022-05-12' # 0 is for the next session 
 leftBuffer = 40
+
+
+# Start
+element_tab = browser.find_element(By.XPATH, '//div[@data-set="performance"]')
+try:
+    element_tab.click()
+except ElementNotInteractableException:
+    print('test')
+
+time.sleep(0.5)
+
+element_tab = browser.find_element(By.XPATH, '//div[@data-set="overview"]')
+try:
+    element_tab.click()
+except ElementNotInteractableException:
+    print('test')
+
+#Logging into trading view
+login_page = browser.find_element(By.XPATH, '//button[@aria-label="Open user menu"]')
+login_page.click()
+time.sleep(0.25)
+login_page = browser.find_element(By.XPATH, '//button[@data-name="header-user-menu-sign-in"]')
+login_page.click()
+time.sleep(0.25)
+login_page = browser.find_element(By.XPATH, '//span[@class="tv-signin-dialog__social tv-signin-dialog__toggle-email js-show-email"]')
+login_page.click()
+username = browser.find_element(By.XPATH, '//input[@name="username"]')
+username.send_keys("cs.benliu@gmail.com")
+time.sleep(0.5)
+password = browser.find_element(By.XPATH, '//input[@name="password"]')
+password.send_keys("tltShort!1")
+time.sleep(0.5)
+login_button = browser.find_element(By.XPATH, '//button[@class="tv-button tv-button--size_large tv-button--primary tv-button--loader"]')
+login_button.click()
+time.sleep(1)
 print(f'Scraping {url}...')
-time.sleep(18)
+time.sleep(10)
 print('wait over')
 
 try:
